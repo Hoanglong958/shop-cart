@@ -3,6 +3,7 @@ import { Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home.jsx";
 import CartPage from "./pages/CartPage.jsx";
 import CheckoutPage from "./pages/CheckoutPage.jsx";
+import PostsPage from "./pages/PostsPage.jsx";
 
 export default function App(){
   return (
@@ -13,6 +14,7 @@ export default function App(){
           <Link to="/">Home</Link>
           <Link to="/cart">Cart</Link>
           <Link to="/checkout">Checkout</Link>
+          <Link to="/posts">Posts</Link>
         </nav>
       </header>
 
@@ -20,6 +22,7 @@ export default function App(){
         <Route path="/" element={<Home/>} />
         <Route path="/cart" element={<CartPage/>} />
         <Route path="/checkout" element={<CheckoutPage/>} />
+        <Route path="/posts" element={<PostsPage />} />
       </Routes>
     </div>
   );

@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import cartReducer from "./cartSlice.js";
 import checkoutReducer from "./checkoutSlice.js";
+import postsReducer from "./postsSlice.js";
 
 // ---- Đọc dữ liệu từ localStorage ----
 const loadState = () => {
@@ -25,6 +26,7 @@ const store = configureStore({
   reducer: {
     cart: cartReducer,
     checkout: checkoutReducer,
+     posts: postsReducer,
   },
   preloadedState: loadState(), // load lại khi khởi động
 });

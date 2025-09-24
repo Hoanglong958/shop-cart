@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000/api", // đổi thành URL backend của bạn
+  baseURL: "https://jsonplaceholder.typicode.com/posts", // API test free
   headers: {
     "Content-Type": "application/json",
   },
